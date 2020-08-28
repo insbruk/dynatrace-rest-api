@@ -1,6 +1,10 @@
 # dynatrace-rest-api
 Python rest api library for dynatrace saas
 
+# Dynatrace REST API Reference
+
+[Dynatrace REST API](https://www.dynatrace.com/support/help/dynatrace-api)
+
 # Installation
 ```
 pip install git+https://github.com/insbruk/dynatrace-rest-api.git
