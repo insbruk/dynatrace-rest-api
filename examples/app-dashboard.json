@@ -1,0 +1,1095 @@
+{
+    "dashboardMetadata": {
+        "dashboardFilter": {
+            "managementZone": {
+                "id": "-5731864933644579354",
+                "name": "APP"
+            },
+            "timeframe": "l_2_HOURS"
+        },
+        "name": "app perf",
+        "owner": "perftest@example.com",
+        "shared": true,
+        "sharingDetails": {
+            "linkShared": true,
+            "published": true
+        }
+    },
+    "id": "e9494e52-c111-4cf0-b21c-c4574c923458",
+    "metadata": {
+        "clusterVersion": "1.200.75.20200817-191930",
+        "configurationVersions": [
+            3
+        ]
+    },
+    "tiles": [
+        {
+            "bounds": {
+                "height": 304,
+                "left": 0,
+                "top": 0,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "NONE",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": []
+                                }
+                            ],
+                            "entityType": "SERVICE",
+                            "metric": "builtin:service.requestCount.total",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "type": "LINE"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "App: Requests",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TO_PG": [
+                            "PROCESS_GROUP-32AB8584F04CEDB4|current"
+                        ],
+                        "SERVICE_TYPE": [
+                            "2"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 0,
+                "top": 304,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "PERCENTILE",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": []
+                                }
+                            ],
+                            "entityType": "SERVICE",
+                            "metric": "builtin:service.response.time",
+                            "percentile": 95,
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "type": "LINE"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "App: Response Time 95pct",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TO_PG": [
+                            "PROCESS_GROUP-32AB8584F04CEDB4|current"
+                        ],
+                        "SERVICE_TYPE": [
+                            "2"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 0,
+                "top": 608,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "MAX",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": []
+                                }
+                            ],
+                            "entityType": "SERVICE",
+                            "metric": "builtin:service.response.time",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "type": "LINE"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "App: Response Time Max",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TO_PG": [
+                            "PROCESS_GROUP-32AB8584F04CEDB4|current"
+                        ],
+                        "SERVICE_TYPE": [
+                            "2"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 0,
+                "top": 912,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "NONE",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": []
+                                }
+                            ],
+                            "entityType": "SERVICE",
+                            "metric": "builtin:service.errors.fivexx.count",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "type": "BAR"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "App: HTTP 5xx errors",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TO_PG": [
+                            "PROCESS_GROUP-32AB8584F04CEDB4|current"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 0,
+                "top": 1216,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "NONE",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": []
+                                }
+                            ],
+                            "entityType": "SERVICE",
+                            "metric": "builtin:service.errors.fourxx.count",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "type": "BAR"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "App: HTTP 4xx Errors",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TO_PG": [
+                            "PROCESS_GROUP-32AB8584F04CEDB4|current"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 0,
+                "top": 1520,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "NONE",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "0",
+                                    "name": "dt.entity.process_group_instance",
+                                    "values": []
+                                },
+                                {
+                                    "entityDimension": false,
+                                    "id": "2",
+                                    "name": "poolname",
+                                    "values": [
+                                        "G1 Eden Space"
+                                    ]
+                                },
+                                {
+                                    "entityDimension": false,
+                                    "id": "3",
+                                    "name": "gcname",
+                                    "values": []
+                                }
+                            ],
+                            "entityType": "PROCESS_GROUP_INSTANCE",
+                            "metric": "builtin:tech.jvm.memory.pool.collectionTime",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": false,
+                            "type": "BAR"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "App: JVM GC Young Gen",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "PROCESS_GROUP_INSTANCE": {
+                        "HOST_TAG_OF_PROCESS": [
+                            "[Environment]Name:aue1lswasA01"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 0,
+                "top": 1824,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "NONE",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "0",
+                                    "name": "dt.entity.process_group_instance",
+                                    "values": []
+                                },
+                                {
+                                    "entityDimension": false,
+                                    "id": "2",
+                                    "name": "poolname",
+                                    "values": [
+                                        "G1 Old Gen"
+                                    ]
+                                }
+                            ],
+                            "entityType": "PROCESS_GROUP_INSTANCE",
+                            "metric": "builtin:tech.jvm.memory.pool.collectionTime",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": false,
+                            "type": "BAR"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "App: JVM GC Old Gen",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "PROCESS_GROUP_INSTANCE": {
+                        "HOST_TAG_OF_PROCESS": [
+                            "[Environment]Name:aue1lswasA01"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 456,
+                "top": 0,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "AVG",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "0",
+                                    "name": "dt.entity.host",
+                                    "values": []
+                                }
+                            ],
+                            "entityType": "HOST",
+                            "metric": "builtin:host.cpu.usage",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": false,
+                            "type": "LINE"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "App: CPU Utilization",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "HOST": {
+                        "AUTO_TAGS": [
+                            "[Environment]Name:aue1lswasA01"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 456,
+                "top": 304,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "AVG",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "0",
+                                    "name": "dt.entity.host",
+                                    "values": []
+                                }
+                            ],
+                            "entityType": "HOST",
+                            "metric": "builtin:host.mem.usage",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": false,
+                            "type": "LINE"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "App: MEM Utilization",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "HOST": {
+                        "AUTO_TAGS": [
+                            "[Environment]Name:aue1lswasA01"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 456,
+                "top": 608,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "NONE",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "HOST",
+                                    "name": null,
+                                    "values": []
+                                },
+                                {
+                                    "entityDimension": true,
+                                    "id": "NETWORK_INTERFACE",
+                                    "name": null,
+                                    "values": []
+                                }
+                            ],
+                            "entityType": "HOST",
+                            "metric": "CTS_HOST_NETWORK_TRAFFIC",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": false,
+                            "type": "LINE"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "App: Network Traffic",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "HOST": {
+                        "AUTO_TAGS": [
+                            "[Environment]Name:aue1lswasA01"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 456,
+                "top": 912,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "AVG",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "0",
+                                    "name": "dt.entity.host",
+                                    "values": []
+                                }
+                            ],
+                            "entityType": "HOST",
+                            "metric": "builtin:host.disk.usedPct",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": false,
+                            "type": "LINE"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "App: Disk Usage",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "HOST": {
+                        "AUTO_TAGS": [
+                            "[Environment]Name:aue1lswasA01"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 456,
+                "top": 1216,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "AVG",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "0",
+                                    "name": "dt.entity.process_group_instance",
+                                    "values": []
+                                }
+                            ],
+                            "entityType": "PROCESS_GROUP_INSTANCE",
+                            "metric": "builtin:tech.jvm.threads.count",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": false,
+                            "type": "LINE"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "App: JVM Threads",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "PROCESS_GROUP_INSTANCE": {
+                        "HOST_TAG_OF_PROCESS": [
+                            "[AWS]Name:apphost01"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 456,
+                "top": 1520,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "AVG",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "0",
+                                    "name": "dt.entity.process_group_instance",
+                                    "values": []
+                                },
+                                {
+                                    "entityDimension": false,
+                                    "id": "2",
+                                    "name": "poolname",
+                                    "values": [
+                                        "G1 Eden Space"
+                                    ]
+                                }
+                            ],
+                            "entityType": "PROCESS_GROUP_INSTANCE",
+                            "metric": "builtin:tech.jvm.memory.pool.used",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": false,
+                            "type": "LINE"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "App: JVM MEM Eden Space",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "PROCESS_GROUP_INSTANCE": {
+                        "HOST_TAG_OF_PROCESS": [
+                            "[Environment]Name:aue1lswasA01"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 456,
+                "top": 1824,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "AVG",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "0",
+                                    "name": "dt.entity.process_group_instance",
+                                    "values": []
+                                },
+                                {
+                                    "entityDimension": false,
+                                    "id": "2",
+                                    "name": "poolname",
+                                    "values": [
+                                        "G1 Old Gen"
+                                    ]
+                                }
+                            ],
+                            "entityType": "PROCESS_GROUP_INSTANCE",
+                            "metric": "builtin:tech.jvm.memory.pool.used",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": false,
+                            "type": "LINE"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "App: JVM MEM Old Gen Space",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "PROCESS_GROUP_INSTANCE": {
+                        "HOST_TAG_OF_PROCESS": [
+                            "[Environment]Name:aue1lswasA01"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 912,
+                "top": 0,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "AVG",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "0",
+                                    "name": "dt.entity.host",
+                                    "values": []
+                                }
+                            ],
+                            "entityType": "HOST",
+                            "metric": "builtin:host.cpu.usage",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": false,
+                            "type": "LINE"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "Couchbase 6.5.1: CPU Utilization",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "HOST": {
+                        "AUTO_TAGS": [
+                            "[AWS]ServiceName:Couchbase",
+                            "[AWS]ServiceEnvName:wperf"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 912,
+                "top": 304,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "AVG",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "0",
+                                    "name": "dt.entity.host",
+                                    "values": []
+                                }
+                            ],
+                            "entityType": "HOST",
+                            "metric": "builtin:host.mem.usage",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": false,
+                            "type": "LINE"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "Couchbase 6.5.1: MEM Utilization",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "HOST": {
+                        "AUTO_TAGS": [
+                            "[AWS]ServiceName:Couchbase",
+                            "[AWS]ServiceEnvName:wperf"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 912,
+                "top": 608,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "NONE",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "HOST",
+                                    "name": null,
+                                    "values": []
+                                },
+                                {
+                                    "entityDimension": true,
+                                    "id": "NETWORK_INTERFACE",
+                                    "name": null,
+                                    "values": []
+                                }
+                            ],
+                            "entityType": "HOST",
+                            "metric": "CTS_HOST_NETWORK_TRAFFIC",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": false,
+                            "type": "LINE"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "Couchbase 6.5.1: CPU Network Traffic",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "HOST": {
+                        "AUTO_TAGS": [
+                            "[AWS]ServiceName:Couchbase",
+                            "[AWS]ServiceEnvName:wperf"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 912,
+                "top": 912,
+                "width": 456
+            },
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [
+                        {
+                            "aggregation": "AVG",
+                            "aggregationRate": "TOTAL",
+                            "dimensions": [
+                                {
+                                    "entityDimension": true,
+                                    "id": "0",
+                                    "name": "dt.entity.host",
+                                    "values": []
+                                }
+                            ],
+                            "entityType": "HOST",
+                            "metric": "builtin:host.disk.usedPct",
+                            "percentile": null,
+                            "sortAscending": false,
+                            "sortColumn": false,
+                            "type": "LINE"
+                        }
+                    ],
+                    "type": "TIMESERIES"
+                },
+                "customName": "Couchbase 6.5.1: Disk Usage",
+                "defaultName": "Custom chart",
+                "filtersPerEntityType": {
+                    "HOST": {
+                        "AUTO_TAGS": [
+                            "[AWS]ServiceName:Couchbase",
+                            "[AWS]ServiceEnvName:wperf"
+                        ]
+                    }
+                },
+                "type": "MIXED"
+            },
+            "name": "Custom chart",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "CUSTOM_CHARTING"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 1368,
+                "top": 0,
+                "width": 152
+            },
+            "chartVisible": true,
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [],
+                    "type": "TIMESERIES"
+                },
+                "customName": "App: Hosts",
+                "defaultName": "App: Hosts",
+                "filtersPerEntityType": {
+                    "HOST": {
+                        "AUTO_TAGS": [
+                            "[AWS]Name:apphost01"
+                        ]
+                    }
+                },
+                "type": "HOST"
+            },
+            "name": "",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "HOSTS"
+        },
+        {
+            "bounds": {
+                "height": 304,
+                "left": 1520,
+                "top": 0,
+                "width": 152
+            },
+            "chartVisible": true,
+            "configured": true,
+            "filterConfig": {
+                "chartConfig": {
+                    "legendShown": true,
+                    "resultMetadata": {},
+                    "series": [],
+                    "type": "TIMESERIES"
+                },
+                "customName": "Couchbase 6.5.1",
+                "defaultName": "Couchbase 6.5.1",
+                "filtersPerEntityType": {
+                    "HOST": {
+                        "AUTO_TAGS": [
+                            "[AWS]ServiceName:Couchbase",
+                            "[AWS]ServiceEnvName:wperf"
+                        ]
+                    }
+                },
+                "type": "HOST"
+            },
+            "name": "",
+            "tileFilter": {
+                "managementZone": null,
+                "timeframe": null
+            },
+            "tileType": "HOSTS"
+        }
+    ]
+}
